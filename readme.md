@@ -1,4 +1,4 @@
-Þetta er hópverkefni 1 fyrir Vefforitun 1 í Háskóla Íslands haustönnina 2025.
-
-Hópmeðlimir
-Fróði Benjamín Þrastarson fbt2@hi.is, GitHub username FrodiBen
+# Háskóli Íslands, Vefforritun 1, hópverkefni 1, haustið 2025
+## Að verkefninu vinna:
+- Fróði Benjamín Þrastarson (fbt2@hi.is), FrodiBen á GitHub
+- Theódór Helgi Kristinsson (thk105@hi.is), tmaestro75 á GitHub
