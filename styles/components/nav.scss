@@ -1,5 +1,24 @@
 /**Hérna eru gildin fyrir nav**/
 
 nav {
-    ul{list-style: none;}
+    padding-top: var(--spacing);
+    border-top: var(--border-general);
+
+
+    .navContent{
+        display:grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-flow: column;
+
+        .navItemFirst {
+            grid-column: span 4;
+        }
+
+        .navItem {
+            grid-column: span 1;
+        }
+        
+    }
+
+    
 }

@@ -20,11 +20,11 @@ select {
 main{
     min-height: 100vh;
 }
+
 div.wrapper,
 nav {
+    min-width: calc(100vw - 32px);
     max-width: var(--max-width);
-
-    $marginSizeMain: max(16px, calc((100vw - var(--max-width))/2));
-    margin-right: $marginSizeMain;
-    margin-left: $marginSizeMain;
+    margin-left: max(16px, calc((100vw - var(--max-width))/2));
+    margin-right:max(16px, calc((100vw - var(--max-width))/2));
 }
