@@ -2,7 +2,6 @@
   "name": "hopverkefni1-frarth",
   "version": "1.0.0",
   "description": "Hópverkefni í Vefforitun 1 - 2025 FrodiBen ArnoldOba TheódórHel",
-  "main": "index.js",
   "scripts": {
     "test": "test",
     "dev": "parcel index.html 'sidur/*.html' --lazy --no-cache",

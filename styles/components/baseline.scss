@@ -1,0 +1,30 @@
+/**Inheritance og dót***/
+/** Lætur myndir aldrei taka meira pláss en foreldri skilgreinir **/
+img {
+  max-width: 100%;
+}
+
+/** Litur á hlekkjum erfist frá foreldri **/
+a {
+  color: inherit;
+}
+
+/** Stærð á letri erfist frá foreldri í form element **/
+input,
+button,
+select {
+  font-size: inherit;
+}
+
+/**Þetta setur grunnvídd sem gildir fyrir allt efni**/
+main{
+    min-height: 100vh;
+}
+div.wrapper,
+nav {
+    max-width: var(--max-width);
+
+    $marginSizeMain: max(16px, calc((100vw - var(--max-width))/2));
+    margin-right: $marginSizeMain;
+    margin-left: $marginSizeMain;
+}
