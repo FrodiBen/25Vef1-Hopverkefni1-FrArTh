@@ -1,0 +1,45 @@
+$grid: false;
+
+:root {
+  --font-size-base: 16px;
+  --font-size-headings: 1.5rem;
+
+  /* Grunn bilið okkar er 1rem == 16px */
+  --spacing: 1rem;
+
+  /* Hámarks og lágmarks breidd á efni */
+  --max-width: 1200px;
+
+  /* Hæð á nav */
+  --height-nav: 4rem;
+
+  /* Border breiddir */
+  --border-general: 2px solid var(--color-protection);
+  --border-radius-regular: 5px;
+
+  /* Litir */
+  --color-background-primary: #fff;
+  --color-text-primary: #000;
+  --color-protection: rgb(0 0 0 / 35%);
+
+  /* Letur stillingar */
+  --font-base-size: 1rem;
+  //--font-family-base: "Gelasio", "Georgia", serif;
+  //--font-family-heading: "Atkinson Hyperlegible", "Courier New", monospace;
+
+  /** Grid tengt dót **/
+  --columns: 12;
+  --gutter: 32px;
+  --offset: 20px;
+  --grid-color: hsl(255deg 75% 75% / 25%);
+  --grid-repeating-width: calc(100% / var(--columns));
+  --grid-column-width: calc((100% / var(--columns)) - var(--gutter));
+  --grid-background-width: calc(100% + var(--gutter));
+  --grid-background-columns: repeating-linear-gradient(
+    to right,
+    var(--grid-color),
+    var(--grid-color) var(--grid-column-width),
+    transparent var(--grid-column-width),
+    transparent var(--grid-repeating-width)
+  );
+}

@@ -1,0 +1,16 @@
+/**Hérna er footer stilltur**/
+footer{
+    max-width: inherit;
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    border-top: var(--border-general);
+    min-height: 30vh;
+
+    section{
+        grid-column: span 3 ;
+    }
+
+    ul{
+        list-style: none;
+    }
+}
