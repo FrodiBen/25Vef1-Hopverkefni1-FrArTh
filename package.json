@@ -1,8 +1,7 @@
 {
   "name": "hopverkefni1-frarth",
   "version": "1.0.0",
-  "description": "Hópverkefni í Vefforitun 1 - 2025 FrodiBen ArnoldOba TheódórHel",
-  "main": "index.js",
+  "description": "Hópverkefni í Vefforitun 1 - 2025 FrodiBen ArnoldObas TheódórHel",
   "scripts": {
     "test": "test",
     "dev": "parcel index.html 'sidur/*.html' --lazy --no-cache",
@@ -13,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/FrodiBen/25Vef1-Hopverkefni1-FrArTh.git"
   },
-  "author": "FrodiBenj ArnoldOba TheodorHel",
+  "author": "FrodiBenj ArnoldObas TheodorHel",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/FrodiBen/25Vef1-Hopverkefni1-FrArTh/issues"
