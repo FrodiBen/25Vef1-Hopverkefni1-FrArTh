@@ -1,27 +1,133 @@
 <!DOCTYPE html>
 <html lang="is">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="../styles.css">
-        <title>Forritarafjelagið - Starfsfólk</title>
-    </head>
-    <body>
-        <nav>
-            <h1>Forritarafjelagið</h1>
-            <ul>
-                <li><a href="/index.html">Forsíða</a></li>
-                <li><a href="lausnir.html">Lausnir</a></li>
-                <li><a href="um.html">Um okkur</a></li>
-                <li><strong>Starfsfólk</strong></li>
-            </ul>
-        </nav>
-        <div class = "wrapper">
-            <main>
-
-            </main>
-            <footer>
-
-            </footer>
-        </div>
-    </body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Forritunarumhverfi og prófanir - Lausnir - Forritarafjelagið</title>
+    <meta name="description" content="Fyrsta lausn Forritarafjelagsins."/>
+    <meta property="og:title" content="Forritunarumhverfi og prófanir"/>
+    <meta property="og:description" content="Fyrsta lausn Forritarafjelagsins."/>
+    <meta property="og:image" content="myndir/forritari.png"/>
+    <meta property="twitter:title" content="Forritunarumhverfi og prófanir"/>
+    <meta property="twitter:description" content="Fyrsta lausn Forritarafjelagsins."/>
+    <meta property="twitter:image" content="myndir/forritari.png"/>
+  </head>
+  <body>
+    <header>
+      <span class="logo">&Lambda;</span>
+      <h1>Forritarafjelagið</h1>
+      <p class="sr-only"><a href="#main">Beint í aðalefni</a></p>
+      <menu>
+        <li><a href="../index.html">Forsíða</a></li>
+        <li><a href="lausnir.html">Lausnir</a></li>
+        <li><a href="um-okkur.html">Um okkur</a></li>
+        <li><a href="../index.html">Starfsfólk</a></li>
+      </menu>
+    </header>
+    <main>
+      <h2>Forritunarumhverfi og prófanir</h2>
+      <p>
+        <img src="myndir/forritari.png" alt="Forritari"/>
+        <strong class="popular">Vinsælt!</strong>
+        <data value="25000">25.000 kr.</data>
+        Allt um forritunarumhverfi og mismunandi leiðir til að prófa forrit í þeim.
+      </p>
+      <form>
+        <label for="environment-selection">Forritunarumhverfi:</label>
+        <select id="environment-selection">
+          <option id="environment-choose">Veldu</option>
+        </select>
+        <label for="method-selection">Prófaðferð:</label>
+        <select id="method-selection">
+          <option id="method-choose">Veldu</option>
+        </select>
+        <button type="submit">Kaupa</button>
+      </form>
+      <h3>Algengar spurningar</h3>
+      <details class="qna" open>
+        <summary class="question">Hversu stór teymi á þetta við?</summary>
+        <p class="answer">Þessi lausn virkar fyrir allar stærðir teyma, allt frá einum forritara til hundruða. Þið munið sjá ljósið eftir að hafa farið í gegnum þessa lausn.</p>
+      </details>
+      <details class="qna">
+        <summary class="question">Hvernig fer kennsla á lausnina fram?</summary>
+        <p class="answer">Vestibulum vestibulum felis nulla, in suscipit justo dignissim ultrices. Nunc id porttitor mauris. Nunc id porttitor mauris.</p>
+      </details>
+      <h3>Nýjustu umsagnir</h3>
+      <article>
+        <h4 class="hidden">Umsögn 1</h4>
+        <div class="rating">&star;&star;&star;&star;&star;</div>
+        <p class="review-text">
+          Alveg frábær heimspeki
+          Lausn? Þetta er ekkert minna en ný heimspeki fyrir lífið! Mæli 100% með, megið ekki missa af þessu.
+        </p>
+        <footer>
+          <img src="myndir/avatar.png" class="reviewer-name" alt="Jóna Jónsdóttir"/>
+          <time datetime="2025-08-01">1. ágúst 2025</time>
+        </footer>
+      </article>
+      <article>
+        <h4 class="hidden">Umsögn 2</h4>
+        <div class="rating">&star;&star;&star;&star;&star;</div>
+        <p class="review-text">
+          Einstaklega góð lausn
+          Leysti öll okkar vandamál.
+        </p>
+        <footer>
+          <img src="myndir/avatar.png" class="reviewer-name" alt="Jóna Jónsdóttir"/>
+          <time datetime="2025-09-01">1. september 2025</time>
+        </footer>
+      </article>
+      <article>
+        <h4 class="hidden">Umsögn 3</h4>
+        <div class="rating">&star;&star;&star;&star;&star;</div>
+        <p class="review-text">
+          Forritunarumhverfi voru óskiljanleg fyrir þessa lausn!
+          Nú liggur allt ljóst fyrir!
+        </p>
+        <footer>
+          <img src="myndir/avatar.png" class="reviewer-name" alt="Jóna Jónsdóttir"/>
+          <time datetime="2025-09-21">21. september 2025</time>
+        </footer>
+      </article>
+      <h3>Skráðu þig á póstlista</h3>
+      <form>
+        <strong class="news-info">Látum þig vita af uppfærslum og nýrri virkni í þessari lausn.</strong>
+        <label for="news-email">Netfang:</label>
+        <input type="email" id="news-email" placeholder="nafn@example.org"/>
+        <button type="submit">Skrá mig</button>
+      </form>
+    </main>
+    <footer>
+      <h2>Samfélagsmiðlar</h2>
+      <ul>
+        <li><a href="https://www.facebook.com/HaskoliIslands/">Facebook</a></li>
+        <li><a href="https://www.instagram.com/haskoli_islands/">Instagram</a></li>
+        <li><a href="https://www.youtube.com/user/HIvarp">YouTube</a></li>
+        <li><a href="https://www.linkedin.com/school/h%C3%A1sk%C3%B3li-%C3%ADslands/">LinkedIn</a></li>
+      </ul>
+      <h2>Verkefni</h2>
+      <ul>
+        <li><a href="../index.html">Verkefni 1</a></li>
+        <li><a href="../index.html">Verkefni 2</a></li>
+        <li><a href="../index.html">Verkefni 3</a></li>
+        <li><a href="../index.html">Verkefni 4</a></li>
+      </ul>
+      <h2>Lausnir</h2>
+      <ul>
+        <li><a href="lausn.html">Lausn 1</a></li>
+        <li><a href="lausn.html">Lausn 2</a></li>
+        <li><a href="lausn.html">Lausn 3</a></li>
+        <li><a href="lausn.html">Lausn 4</a></li>
+        <li><a href="lausn.html">Lausn 5</a></li>
+      </ul>
+      <h2>Síður</h2>
+      <ul>
+        <li><a href="../index.html">Forsíða</a></li>
+        <li><a href="lausnir.html">Lausnir</a></li>
+        <li><a href="um-okkur.html">Um okkur</a></li>
+        <li><a href="../index.html">Starfsfólk</a></li>
+      </ul>
+    </footer>
+  </body>
 </html>
