@@ -1,0 +1,15 @@
+html::before {
+  position: absolute;
+  inset: 0;
+  z-index: 1000;
+  width: calc(100% - (2 * var(--offset)));
+  max-width: var(--max-width);
+  min-height: 100vh;
+  max-height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  pointer-events: none;
+  content: "";
+  background-image: var(--grid-background-columns);
+  background-size: var(--grid-background-width) 100%;
+}
