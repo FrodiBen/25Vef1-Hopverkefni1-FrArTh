@@ -26,36 +26,47 @@
       </menu>
     </header>
     <main>
-      <h2>Lausnayfirlit</h2>
-      <h3>Flokkar</h3>
-      <form>
-        <input type="checkbox" id="cat1"/>
-        <label for="cat1">Vefforritun, <span class="category-description">Lausnir fyrir vefi og vefforrit</span></label>
-        <input type="checkbox" id="cat2"/>
-        <label for="cat2">Prófanir, <span class="category-description">Prófanalausnir</span></label>
-        <input type="checkbox" id="cat3"/>
-        <label for="cat3">Merking, <span class="category-description">Lorem ipsum dolor</span></label>
-        <fieldset>
-          <legend>Verðbil</legend>
-          <input type="number" id="min" min="25000" max="100000"/>
-          <input type="number" id="max" min="25000" max="100000"/>
-        </fieldset>
-      </form>
-      <h3>Lausnir</h3>
-      <form>
-        <label for="search">Leita:</label>
-        <input type="text" id="search"/>
-        <fieldset>
-          <legend>Raða eftir</legend>
-          <input type="radio" name="sort-value" id="latest-first" checked/>
-          <label for="latest-first">Nýjast</label>
-          <input type="radio" name="sort-value" id="lowest-first"/>
-          <label for="lowest-first">Verð (lægst fyrst)</label>
-          <input type="radio" name="sort-value" id="highest-first"/>
-          <label for="highest-first">Verð (hæst fyrst)</label>
-        </fieldset>
-      </form>
-      <div class="cardGrid">
+      <div class="gridWrapper">
+        <div class="sidebar">
+          <!--<h2>Lausnayfirlit</h2>
+          <h3>Flokkar</h3>-->
+          <form>
+            <div>
+              <input type="checkbox" id="cat1"/>
+              <label for="cat1">Vefforritun, <span class="category-description">Lausnir fyrir vefi og vefforrit</span></label>
+            </div>
+            <div>
+              <input type="checkbox" id="cat2"/>
+              <label for="cat2">Prófanir, <span class="category-description">Prófanalausnir</span></label>
+            </div>
+            <div>
+              <input type="checkbox" id="cat3"/>
+              <label for="cat3">Merking, <span class="category-description">Lorem ipsum dolor</span></label>
+            </div>
+            <fieldset>
+              <legend>Verðbil</legend>
+              <input type="number" id="min" min="25000" max="100000"/>
+              <input type="number" id="max" min="25000" max="100000"/>
+            </fieldset>
+          </form>
+        </div>
+        <div class ="topbar">
+          <h3>Lausnir</h3>
+          <form>
+            <label for="search">Leita:</label>
+            <input type="text" id="search"/>
+            <fieldset>
+              <legend>Raða eftir</legend>
+              <input type="radio" name="sort-value" id="latest-first" checked/>
+              <label for="latest-first">Nýjast</label>
+              <input type="radio" name="sort-value" id="lowest-first"/>
+              <label for="lowest-first">Verð (lægst fyrst)</label>
+              <input type="radio" name="sort-value" id="highest-first"/>
+              <label for="highest-first">Verð (hæst fyrst)</label>
+            </fieldset>
+          </form>
+        </div>
+
         <article class="lausnirSida">
           <h4>Forritunarumhverfi og prófanir</h4>
           <p>Allt um forritunarumhverfi og mismunandi leiðir til að prófa forrit í þeim.</p>
