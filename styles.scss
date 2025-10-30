@@ -1,11 +1,11 @@
-@use "/styles/config";
-@use "/styles/reset";
-@use "/styles/gridConfig";
+@use "styles/config";
+@use "styles/reset";
+@use "styles/gridConfig";
 
-@use "/styles/components/baseline.scss";
-@use "/styles/components/header.scss";
-@use "/styles/components/intro.scss";
-@use "styles/components/gridSections.scss";
-@use "/styles/components/footer.scss";
+@use "styles/components/baseline";
+@use "styles/components/header";
+@use "styles/components/intro";
+@use "styles/components/gridSections";
+@use "styles/components/footer";
 
-@use "/styles/utils";
+@use "styles/utils";
