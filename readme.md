@@ -3,7 +3,6 @@
 - Arnold Obas (air10@hi.is), arnold-obas á GitHub
 - Fróði Benjamín Þrastarson (fbt2@hi.is), FrodiBen á GitHub
 - Theódór Helgi Kristinsson (thk105@hi.is), tmaestro75 á GitHub
-- Arnold Obas, (air10@hi.is), Arnold Obas á GitHub
 
 ## Upplýsingar um verkefni
  - Github link verkefnis er https://github.com/FrodiBen/25Vef1-Hopverkefni1-FrArTh
