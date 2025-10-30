@@ -19,15 +19,23 @@ select {
 /**Þetta setur grunnvídd sem gildir fyrir allt efni**/
 main{
     min-height: 100vh;
+      section{
+        margin-bottom: var(--gutter);
+      }
 }
 
 header ,
-main {
+main,
+footer {
     max-width: var(--max-width);
     margin:auto;
+    
 }
 
-footer{
-  max-width: var(--max-width);
-  margin:auto;
+@media (width <= 1232){
+  header,
+  main,
+  footer{
+    max-width: calc(100vw - 32px );
+  }
 }

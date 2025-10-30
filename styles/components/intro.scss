@@ -40,3 +40,12 @@ section.intro {
     }
   }
 }
+
+section.lausnIntro{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  > div{
+    grid-column: span 6;
+  }
+}
