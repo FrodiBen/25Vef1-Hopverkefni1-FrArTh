@@ -3,3 +3,15 @@
         margin-bottom: calc(var(--gutter) / 2);
     }
 }
+
+body {
+  font-size: var(--letter-medium);
+}
+
+h1 {
+  font-size: var(--letter-big);
+}
+
+small {
+  font-size: var(--letter-small);
+}
