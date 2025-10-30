@@ -3,7 +3,14 @@ footer{
     display:grid;
     grid-template-columns: repeat(12, 1fr);
     border-top: var(--border-general);
+    padding-top: var(--gutter);
     min-height: 30vh;
+
+    .logo{
+        font-weight: bold;
+        font-size: 2rem;
+        padding-top: -0.5rem ;
+    }
 
     section{
         grid-column: span 3 ;

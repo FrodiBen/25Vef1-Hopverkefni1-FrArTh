@@ -4,6 +4,7 @@ div.gridWrapper {
     grid-auto-flow: row;
     column-gap: var(--gutter);
     row-gap: var(--gutter);
+    margin-top: var(--gutter);
 
     > div,
     > article {
@@ -28,12 +29,14 @@ div.gridWrapper {
     }
 
     .cardLausn {
-        display:flex;
+        display:flexbox;
         grid-column: span 4;
-        padding: 16px, 8px, 16px, 8px;
+        flex-direction: row;
 
-        img{
-            vertical-align: top;
+        div.contain{
+            
+            padding: 16px, 8px, 16px, 8px;
+            order: -1;
         }
     }
 
@@ -49,7 +52,7 @@ div.gridWrapper {
     }
 
     > div.topbar{
-        display:block;
+        display:flexbox;
         grid-column: span 9;
         grid-row:span 1;
     }
@@ -57,10 +60,66 @@ div.gridWrapper {
     > article.lausnirSida {
         display:block;
         grid-column: span 3;
+        grid-row: span 4;
+        padding:calc(var(--gutter) / 2);
     }
 
     > article.lausn {
         grid-column: span 4;
     }
+}
+
+@media (width < 900px) {
+    div.gridWrapper{
+        div.sidebar{
+            display:none;
+            grid-column: 0 span;
+        }
+
+        div.topbar{
+            grid-column: span 12;
+        }
+
+        > article.lausnirSida{
+            grid-column: span 4;
+        }
+    }
+}
+
+@media (width < 700px){
+    div.gridWrapper{
+        >article.lausnirSida{
+            grid-column: span 6;
+        }
+
+        article.lausn{
+            grid-column: span 12;
+        }
+
+        div.cardLausn{
+            grid-column: span 6;
+        }  
+    }
+}
+
+@media (width < 500px){
+    div.gridWrapper{
+        >article.lausnirSida{
+            grid-column: span 12;
+        }
+
+        div.cardLausn{
+            grid-column: span 12;
+        }
+
+        div.cardReview{
+            grid-column: span 12;
+        }
+        
+         
+    
+    }
+
+    
 }
 
