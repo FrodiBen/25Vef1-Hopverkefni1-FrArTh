@@ -1,5 +1,7 @@
 /** Hér er stjórnað hvernig að intro virki **/
 section.intro {
+  $intro-height: 524px;
+
   position: relative;
   display: block;
   width: var(--max-width);
@@ -7,12 +9,11 @@ section.intro {
   margin-bottom: calc(var(--spacing) * 2);
   color: var(--color-background-primary);
 
-  $intro-height: 524px;
- 
+  
     img{
         display: block;
         width: 100%;
-        max-height: $introHeight;
+        max-height: $intro-height;
         object-fit: cover;
         object-position: 50% 50%;
     }
