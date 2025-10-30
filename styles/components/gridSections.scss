@@ -8,27 +8,43 @@ div.gridWrapper {
     > div,
     > article {
         border: var(--border-general);
-        border-radius: 10px;
+        border-radius: 16px;
     }
 
     .cardReview {
         display:block;
         grid-column: span 6;
+        padding: 16px, 8px, 16px, 8px;
+
+        blockquote {
+            font-weight: bold;
+        }
+
+        img{
+            float:left;
+            border-radius: 32px;
+        }
+
     }
 
     .cardLausn {
-        display:block;
+        display:flex;
         grid-column: span 4;
+        padding: 16px, 8px, 16px, 8px;
+
+        img{
+            vertical-align: top;
+        }
     }
 
     > div.sidebar{
         border:none;
-        display:flex;
         grid-column: span 3;
         grid-row: span 6;
 
         form{
-            border:var(--border-general);
+            max-height: min-content;
+            border: var(--border-general);
         }
     }
 

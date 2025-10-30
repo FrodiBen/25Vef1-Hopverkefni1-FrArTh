@@ -22,9 +22,12 @@ main{
 }
 
 header ,
-footer,
 main {
-    max-width: max(var(--max-width), calc(100vw - 32px));
-    margin-left: max(16px, calc((100vw - var(--max-width))/2));
-    margin-right:max(16px, calc((100vw - var(--max-width))/2));
+    max-width: var(--max-width);
+    margin:auto;
+}
+
+footer{
+  max-width: var(--max-width);
+  margin:auto;
 }

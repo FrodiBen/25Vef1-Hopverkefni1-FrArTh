@@ -1,6 +1,7 @@
 /**Hérna er footer stilltur**/
 footer{
-    max-width: inherit;
+    max-width: var(--max-width);
+    margin:auto;
     display:grid;
     grid-template-columns: repeat(12, 1fr);
     border-top: var(--border-general);
