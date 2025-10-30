@@ -5,7 +5,7 @@
   "scripts": {
     "test": "test",
     "dev": "parcel index.html 'sidur/*.html' --lazy --no-cache",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html 'sidur/*.html'",
     "lint": "stylelint **/*.scss"
   },
   "repository": {
