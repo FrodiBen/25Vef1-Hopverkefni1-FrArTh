@@ -20,3 +20,19 @@ footer{
         list-style: none;
     }
 }
+
+/** Hér eru gildin fyrir footer logos **/
+footer .samfelagsmidlar img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
+}
+
+footer .samfelagsmidlar {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

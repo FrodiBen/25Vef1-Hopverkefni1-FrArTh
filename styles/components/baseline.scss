@@ -41,3 +41,40 @@ footer {
     max-width: calc(100vw - 32px );
   }
 }
+
+/** Stíl fyrir takka**/
+.button{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding: 10px 16px; border-radius: 8px; border:1px solid currentColor;
+  font-weight:600; text-decoration:none; line-height:1;
+}
+.button-aðal { 
+  background: currentColor; color:#ffffff; border-color: currentColor;
+}
+.button-glær {
+  background: transparent;
+}
+.button:focus-visible {
+  outline:2px solid; outline-offset:2px;
+}
+
+
+
+
+:root {
+  --letter-small: 0.9rem;
+  --letter-medium: 1rem;
+  --letter-big: 1.5rem;
+}
+
+body {
+  font-size: var(--letter-medium);
+}
+
+h1 {
+  font-size: var(--letter-big);
+}
+
+small {
+  font-size: var(--letter-small);
+}
