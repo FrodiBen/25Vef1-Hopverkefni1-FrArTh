@@ -1,15 +1,15 @@
-/**Hérna er footer stilltur**/
+/** Hérna er footer stilltur **/
 footer{
     display:grid;
     grid-template-columns: repeat(12, 1fr);
-    border-top: var(--border-general);
-    padding-top: var(--gutter);
     min-height: 30vh;
+    padding-top: var(--gutter);
+    border-top: var(--border-general);
 
     .logo{
-        font-weight: bold;
-        font-size: 2rem;
         padding-top: -0.5rem ;
+        font-size: 2rem;
+        font-weight: bold;
     }
 
     section{

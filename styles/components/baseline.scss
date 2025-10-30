@@ -1,4 +1,5 @@
-/**Inheritance og dót***/
+/** Inheritance og dót ***/
+
 /** Lætur myndir aldrei taka meira pláss en foreldri skilgreinir **/
 img {
   max-width: 100%;
@@ -16,9 +17,10 @@ select {
   font-size: inherit;
 }
 
-/**Þetta setur grunnvídd sem gildir fyrir allt efni**/
+/** Þetta setur grunnvídd sem gildir fyrir allt efni **/
 main{
     min-height: 100vh;
+
       section{
         margin-bottom: var(--gutter);
       }

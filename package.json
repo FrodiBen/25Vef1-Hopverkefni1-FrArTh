@@ -6,7 +6,8 @@
     "test": "test",
     "dev": "parcel index.html 'sidur/*.html' --lazy --no-cache",
     "build": "parcel build index.html",
-    "lint": "stylelint **/*.scss"
+    "lint": "stylelint **/*.scss",
+    "lintfix": "stylelint **/*.scss --fix"
   },
   "repository": {
     "type": "git",
