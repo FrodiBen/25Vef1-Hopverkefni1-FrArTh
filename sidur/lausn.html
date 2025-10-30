@@ -15,8 +15,7 @@
   </head>
   <body>
     <header>
-      <span class="logo">&Lambda;</span>
-      <h1>Forritarafjelagið</h1>
+      <h1><span class="logo">&lambda;  </span>Forritarafjelagið</h1>
       <p class="sr-only"><a href="#main">Beint í aðalefni</a></p>
       <menu>
         <li><a href="../index.html">Forsíða</a></li>
@@ -26,35 +25,43 @@
       </menu>
     </header>
     <main>
-      <h2>Forritunarumhverfi og prófanir</h2>
-      <p>
-        <img src="../myndir/forritari.jpg" alt="Forritari"/>
-        <strong class="popular">Vinsælt!</strong>
-        <data value="25000">25.000 kr.</data>
-        Allt um forritunarumhverfi og mismunandi leiðir til að prófa forrit í þeim.
-      </p>
-      <form>
-        <label for="environment-selection">Forritunarumhverfi:</label>
-        <select id="environment-selection">
-          <option id="environment-choose">Veldu</option>
-        </select>
-        <label for="method-selection">Prófaðferð:</label>
-        <select id="method-selection">
-          <option id="method-choose">Veldu</option>
-        </select>
-        <button type="submit">Kaupa</button>
-      </form>
-      <h3>Algengar spurningar</h3>
-      <details class="qna" open>
-        <summary class="question">Hversu stór teymi á þetta við?</summary>
-        <p class="answer">Þessi lausn virkar fyrir allar stærðir teyma, allt frá einum forritara til hundruða. Þið munið sjá ljósið eftir að hafa farið í gegnum þessa lausn.</p>
-      </details>
-      <details class="qna">
-        <summary class="question">Hvernig fer kennsla á lausnina fram?</summary>
-        <p class="answer">Vestibulum vestibulum felis nulla, in suscipit justo dignissim ultrices. Nunc id porttitor mauris. Nunc id porttitor mauris.</p>
-      </details>
+
+      <section class="lausn-intro">
+        <div>
+          <img src="../myndir/forritari.jpg" alt="Forritari"/>
+        </div>
+        <div>
+          <p>
+            <h2>Forritunarumhverfi og prófanir</h2>
+            <strong class="popular">Vinsælt!</strong>
+            <data value="25000">25.000 kr.</data>
+            Allt um forritunarumhverfi og mismunandi leiðir til að prófa forrit í þeim.
+          </p>
+          <form>
+            <label for="environment-selection">Forritunarumhverfi:</label>
+            <select id="environment-selection">
+              <option id="environment-choose">Veldu</option>
+            </select>
+            <label for="method-selection">Prófaðferð:</label>
+            <select id="method-selection">
+              <option id="method-choose">Veldu</option>
+            </select>
+            <button type="submit">Kaupa</button>
+          </form>
+          <h3>Algengar spurningar</h3>
+          <details class="qna" open>
+            <summary class="question">Hversu stór teymi á þetta við?</summary>
+            <p class="answer">Þessi lausn virkar fyrir allar stærðir teyma, allt frá einum forritara til hundruða. Þið munið sjá ljósið eftir að hafa farið í gegnum þessa lausn.</p>
+          </details>
+          <details class="qna">
+            <summary class="question">Hvernig fer kennsla á lausnina fram?</summary>
+            <p class="answer">Vestibulum vestibulum felis nulla, in suscipit justo dignissim ultrices. Nunc id porttitor mauris. Nunc id porttitor mauris.</p>
+          </details>
+        </div>
+      </section>
+
       <h3>Nýjustu umsagnir</h3>
-      <div class="gridWrapper">
+      <div class="grid-wrapper">
         <article class="lausn">
           <h4 class="hidden">Umsögn 1</h4>
           <div class="rating">&star;&star;&star;&star;&star;</div>
@@ -102,7 +109,10 @@
     </main>
     <footer>
       <section>
-        <h2>Samfélagsmiðlar</h2>
+        <h2>
+          <span class="logo">&lambda;</span>
+          <span class="sr-only">Samfélagsmiðlar</span>
+        </h2>
         <ul class="samfelagsmidlar">
           <li><a href="https://www.facebook.com/HaskoliIslands/"><img src="../myndir/Facebook_logo.png" alt="Facebook lógó"></a></li>
           <li><a href="https://www.instagram.com/haskoli_islands/"><img src="../myndir/Instagram_logo.png" alt="Instagram lógó"></a></li>

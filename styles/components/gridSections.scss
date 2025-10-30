@@ -1,49 +1,123 @@
-div.gridWrapper {
+div.grid-wrapper {
     display:grid;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-flow: row;
-    column-gap: var(--gutter);
-    row-gap: var(--gutter);
+    gap: var(--gutter) var(--gutter);
+    margin-top: var(--gutter);
 
     > div,
     > article {
         border: var(--border-general);
-        border-radius: 10px;
+        border-radius: 16px;
     }
 
-    .cardReview {
+    .card-review {
         display:block;
         grid-column: span 6;
+        padding: 16px, 8px, 16px, 8px;
+
+        blockquote {
+            font-weight: bold;
+        }
+
+        img{
+            float:left;
+            border-radius: 32px;
+        }
+
     }
 
-    .cardLausn {
-        display:block;
+    .card-lausn {
+        display:flexbox;
+        flex-direction: row;
         grid-column: span 4;
+
+        div.contain{
+            order: -1;
+            padding: 16px, 8px, 16px, 8px;
+        }
     }
 
     > div.sidebar{
-        border:none;
-        display:flex;
-        grid-column: span 3;
         grid-row: span 6;
+        grid-column: span 3;
+        border:none;
 
         form{
-            border:var(--border-general);
+            max-height: min-content;
+            border: var(--border-general);
         }
     }
 
     > div.topbar{
-        display:block;
-        grid-column: span 9;
+        display:flexbox;
         grid-row:span 1;
+        grid-column: span 9;
     }
 
-    > article.lausnirSida {
+    > article.lausnir-sida {
         display:block;
+        grid-row: span 4;
         grid-column: span 3;
+        padding:calc(var(--gutter) / 2);
     }
 
     > article.lausn {
         grid-column: span 4;
     }
 }
+
+@media (width < 900px) {
+    div.grid-wrapper{
+        div.sidebar{
+            display:none;
+            grid-column: 0 span;
+        }
+
+        div.topbar{
+            grid-column: span 12;
+        }
+
+        > article.lausnir-sida{
+            grid-column: span 4;
+        }
+    }
+}
+
+@media (width < 700px){
+    div.grid-wrapper{
+        >article.lausnir-sida{
+            grid-column: span 6;
+        }
+
+        article.lausn{
+            grid-column: span 12;
+        }
+
+        div.card-lausn{
+            grid-column: span 6;
+        }  
+    }
+}
+
+@media (width < 500px){
+    div.grid-wrapper{
+        >article.lausnir-sida{
+            grid-column: span 12;
+        }
+
+        div.card-lausn{
+            grid-column: span 12;
+        }
+
+        div.card-review{
+            grid-column: span 12;
+        }
+        
+         
+    
+    }
+
+    
+}
+

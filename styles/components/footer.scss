@@ -1,10 +1,16 @@
-/**Hérna er footer stilltur**/
+/** Hérna er footer stilltur **/
 footer{
-    max-width: inherit;
     display:grid;
     grid-template-columns: repeat(12, 1fr);
-    border-top: var(--border-general);
     min-height: 30vh;
+    padding-top: var(--gutter);
+    border-top: var(--border-general);
+
+    .logo{
+        padding-top: -0.5rem ;
+        font-size: 2rem;
+        font-weight: bold;
+    }
 
     section{
         grid-column: span 3 ;
@@ -17,16 +23,16 @@ footer{
 
 /** Hér eru gildin fyrir footer logos **/
 footer .samfelagsmidlar img {
+  display: block;
   width: 32px;
   height: 32px;
   object-fit: contain;
-  display: block;
 }
 
 footer .samfelagsmidlar {
   display: flex;
   gap: 1rem;
-  list-style: none;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
